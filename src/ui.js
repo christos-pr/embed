@@ -179,9 +179,9 @@ export default class Ui {
         this.nodes.embedPreloader.style.backgroundImage = '';
       }
     });
-    
-    this.nodes.embedContainer.appendChild(this.nodes.embedTitle);
+
     this.nodes.embedContainer.appendChild(this.nodes.embedElement);
+    this.nodes.embedContainer.appendChild(this.nodes.embedTitle);
   }
 
   /**
