@@ -113,7 +113,7 @@ export default class Ui {
   createFileButton() {
     const button = make('div', [ this.CSS.button ]);
 
-    button.innerHTML = this.config.buttonContent || `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#5c6b7a" viewBox="0 0 256 256"><path d="M216,48H40A16,16,0,0,0,24,64V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V64A16,16,0,0,0,216,48Zm0,144H136V128h80v64Z"></path></svg> ${this.api.i18n.t('Click to select a embed file...')}`;
+    button.innerHTML = this.config.buttonContent || `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#5c6b7a" viewBox="0 0 256 256"><path d="M216,48H40A16,16,0,0,0,24,64V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V64A16,16,0,0,0,216,48Zm0,144H136V128h80v64Z"></path></svg> ${this.api.i18n.t('Click to select an embed...')}`;
 
     button.addEventListener('click', () => {
       this.onSelectFile();
