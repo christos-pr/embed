@@ -23,7 +23,6 @@ export default class Ui {
       wrapper: make('div', [this.CSS.baseClass, this.CSS.wrapper]),
       embedContainer: make('div', [ this.CSS.embedContainer ]),
       fileButton: this.createFileButton(),
-      embedTitle: make('span', this.CSS.embedTitle),
       embedElement: undefined,
       // embedElement: make('div', this.CSS.embedElement),
       embedPreloader: make('div', this.CSS.embedPreloader),
@@ -67,7 +66,6 @@ export default class Ui {
       wrapper: 'embed-tool',
       embedContainer: 'embed-tool__embed',
       embedPreloader: 'embed-tool__embed-preloader',
-      embedTitle: 'embed-tool__embed-title',
       embedElement: 'embed-tool__embed-element',
       caption: 'embed-tool__caption',
     };
@@ -113,7 +111,7 @@ export default class Ui {
   createFileButton() {
     const button = make('div', [ this.CSS.button ]);
 
-    button.innerHTML = this.config.buttonContent || `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#5c6b7a" viewBox="0 0 256 256"><path d="M216,48H40A16,16,0,0,0,24,64V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V64A16,16,0,0,0,216,48Zm0,144H136V128h80v64Z"></path></svg> ${this.api.i18n.t('Click to select an embed...')}`;
+    button.innerHTML = this.config.buttonContent || `<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M17.5 3.125V6.25a.625.625 0 1 1-1.25 0v-2.5h-2.5a.625.625 0 1 1 0-1.25h3.125c.345 0 .625.28.625.625ZM6.25 16.25h-2.5v-2.5a.625.625 0 1 0-1.25 0v3.125c0 .345.28.625.625.625H6.25a.625.625 0 1 0 0-1.25Zm10.625-3.125a.625.625 0 0 0-.625.625v2.5h-2.5a.625.625 0 1 0 0 1.25h3.125c.345 0 .625-.28.625-.625V13.75a.625.625 0 0 0-.625-.625Zm-13.75-6.25c.345 0 .625-.28.625-.625v-2.5h2.5a.625.625 0 1 0 0-1.25H3.125a.625.625 0 0 0-.625.625V6.25c0 .345.28.625.625.625Zm2.5-.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625v-7.5a.625.625 0 0 0-.625-.625h-7.5a.625.625 0 0 0-.625.625Z" fill="#5C6B7A" fill-rule="nonzero"/></svg> ${this.api.i18n.t('Click to select an embed...')}`;
 
     button.addEventListener('click', () => {
       this.onSelectFile();
@@ -165,7 +163,6 @@ export default class Ui {
      * @type {Element}
      */
     this.nodes.embedElement = make('IMG', this.CSS.embedElement, attributes);
-    this.nodes.embedTitle.innerHTML = file.title;
     /**
      * Add load event listener
      */
@@ -181,7 +178,6 @@ export default class Ui {
     });
 
     this.nodes.embedContainer.appendChild(this.nodes.embedElement);
-    this.nodes.embedContainer.appendChild(this.nodes.embedTitle);
   }
 
   /**
