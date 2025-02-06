@@ -7,7 +7,6 @@
     border-radius: 3px;
     overflow: hidden;
     margin-bottom: 8px;
-    border: 1px solid var(--border-color);
 
     &-element {
       width: 100%;
@@ -166,7 +165,7 @@
    */
 
   &--withBorder {
-    ^&__embed-picture {
+    ^&__embed {
       border: 1px solid var(--border-color);
     }
   }
