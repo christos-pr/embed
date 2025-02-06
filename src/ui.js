@@ -90,7 +90,7 @@ export default class Ui {
   /**
    * Renders tool UI
    *
-   * @param {EmbedeToolData} toolData - saved tool data
+   * @param {EmbedToolData} toolData - saved tool data
    * @returns {Element}
    */
   render(toolData) {
@@ -145,17 +145,17 @@ export default class Ui {
   /**
    * Shows embed
    *
-   * @param {Object} file - embed source
+   * @param {object} file - embed source
    * @returns {void}
    */
   fillEmbed(file) {
     const attributes = {
       src: file.thumbnail.url,
       width: file.thumbnail.width,
-      height: file.thumbnail.height
+      height: file.thumbnail.height,
     };
 
-    let eventName = 'load';
+    const eventName = 'load';
 
     /**
      * Compose tag with defined attributes
