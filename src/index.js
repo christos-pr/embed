@@ -85,7 +85,7 @@ export default class EmbedTool {
   static get toolbox() {
     return {
       title: 'Embed',
-      icon: `<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M17.5 3.125V6.25a.625.625 0 1 1-1.25 0v-2.5h-2.5a.625.625 0 1 1 0-1.25h3.125c.345 0 .625.28.625.625ZM6.25 16.25h-2.5v-2.5a.625.625 0 1 0-1.25 0v3.125c0 .345.28.625.625.625H6.25a.625.625 0 1 0 0-1.25Zm10.625-3.125a.625.625 0 0 0-.625.625v2.5h-2.5a.625.625 0 1 0 0 1.25h3.125c.345 0 .625-.28.625-.625V13.75a.625.625 0 0 0-.625-.625Zm-13.75-6.25c.345 0 .625-.28.625-.625v-2.5h2.5a.625.625 0 1 0 0-1.25H3.125a.625.625 0 0 0-.625.625V6.25c0 .345.28.625.625.625Zm2.5-.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625v-7.5a.625.625 0 0 0-.625-.625h-7.5a.625.625 0 0 0-.625.625Z" fill="#5C6B7A" fill-rule="nonzero"/></svg>`,
+      icon: `<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M17.5 3.125V6.25a.625.625 0 1 1-1.25 0v-2.5h-2.5a.625.625 0 1 1 0-1.25h3.125c.345 0 .625.28.625.625ZM6.25 16.25h-2.5v-2.5a.625.625 0 1 0-1.25 0v3.125c0 .345.28.625.625.625H6.25a.625.625 0 1 0 0-1.25Zm10.625-3.125a.625.625 0 0 0-.625.625v2.5h-2.5a.625.625 0 1 0 0 1.25h3.125c.345 0 .625-.28.625-.625V13.75a.625.625 0 0 0-.625-.625Zm-13.75-6.25c.345 0 .625-.28.625-.625v-2.5h2.5a.625.625 0 1 0 0-1.25H3.125a.625.625 0 0 0-.625.625V6.25c0 .345.28.625.625.625Zm2.5-.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625v-7.5a.625.625 0 0 0-.625-.625h-7.5a.625.625 0 0 0-.625.625Z" fill="black" fill-rule="nonzero"/></svg>`,
     };
   }
 
@@ -98,19 +98,19 @@ export default class EmbedTool {
     return [
       {
         name: 'stretched',
-        icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 641 640"><path fill="#5C6B7A" fill-rule="nonzero" d="M1 160h640v320H1V160Zm120-80h400v20H121V80Zm0 460h400v20H121v-20Z"/></svg>`,
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 641 640"><path fill="black" fill-rule="nonzero" d="M1 160h640v320H1V160Zm120-80h400v20H121V80Zm0 460h400v20H121v-20Z"/></svg>`,
         title: 'Stretch embed',
         toggle: true,
       },
       {
         name: 'withBackground',
-        icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 641 640"><path fill="#5C6B7A" fill-rule="nonzero" d="M181 200h280v240H181V200ZM81 120h480v20H81v-20Zm0 380h480v20H81v-20Z"/></svg>`,
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 641 640"><path fill="black" fill-rule="nonzero" d="M181 200h280v240H181V200ZM81 120h480v20H81v-20Zm0 380h480v20H81v-20Z"/></svg>`,
         title: 'With background',
         toggle: true,
       },
       {
         name: 'withBorder',
-        icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 641 640"><rect width="512" height="409" x="64" y="115" fill="none" fill-rule="evenodd" stroke="#5C6B7A" stroke-linecap="round" stroke-width="34" rx="40"/></svg>`,
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 641 640"><rect width="512" height="409" x="64" y="115" fill="none" fill-rule="evenodd" stroke="black" stroke-linecap="round" stroke-width="34" rx="40"/></svg>`,
         title: 'With border',
         toggle: true,
       },
@@ -253,7 +253,7 @@ export default class EmbedTool {
 
   /**
    * Private methods
-   * ̿̿ ̿̿ ̿̿ ̿'̿'\̵͇̿̿\з= ( ▀ ͜͞ʖ▀) =ε/̵͇̿̿/’̿’̿ ̿ ̿̿ ̿̿ ̿̿
+   * ̿̿ ̿̿ ̿̿ ̿'̿'\̵͇̿̿\з= ( ▀ ͜͞ʖ▀) =ε/̵͇̿̿/’̿'̿ ̿ ̿̿ ̿̿ ̿̿
    */
 
   /**
